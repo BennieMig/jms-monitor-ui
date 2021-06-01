@@ -36,14 +36,14 @@
         .banner {
             font-size: 2.7rem;
             margin: 0;
-            padding: 2rem 1rem;
+            padding: 0rem 0rem;
             background-color: #00A1E2;
             color: white;
         }
 .bannerV2 {
             font-size: 5.7rem;
             margin: 0;
-            padding: 1rem 1rem;
+            padding: 0rem 0rem;
             background-color: #00A1E2;
             color: white;
             align:center;

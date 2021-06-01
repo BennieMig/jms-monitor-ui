@@ -43,6 +43,16 @@
             background-color: #00A1E2;
             color: white;
         }
+        
+         .footer {
+            font-size: 1rem;
+            margin: 0;
+            padding: 2rem 1rem;
+            background-color: #00A1E2;
+            color: white;
+            font-family: 'Brush Script MT', cursive;
+            
+        }
 
         body {
             margin: 0;
