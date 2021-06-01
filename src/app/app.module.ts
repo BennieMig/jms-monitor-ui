@@ -4,26 +4,28 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 import { BarraCimaComponent } from './barra-cima/barra-cima.component';
-
+import { BarraBaixoComponent } from './barra-baixo/barra-baixo.component';
+import { CorpoComponent } from './corpo/corpo.component';
 //PL import httpclient module. tb alterado NgModule para incluir HttpClientModule
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports:      [ 
-    BrowserModule,  
+  BrowserModule,  
   HttpClientModule, 
   FormsModule ,
   ReactiveFormsModule,
-    RouterModule.forRoot([
+  RouterModule.forRoot([
   
     ])
   ],
   declarations: [ 
     AppComponent, 
-    HelloComponent, 
-    BarraCimaComponent ],
+    BarraCimaComponent,
+    CorpoComponent,
+    BarraBaixoComponent,
+     ],
   bootstrap:    [ AppComponent ],
 })
 export class AppModule { }
