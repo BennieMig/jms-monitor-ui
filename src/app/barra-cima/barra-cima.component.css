@@ -29,8 +29,8 @@
         }
 
         .lead {
-            font-weight: 300;
-            font-size: 2rem;
+            font-weight: 500;
+            font-size: 0.5rem;
         }
 
         .banner {
@@ -41,7 +41,7 @@
             color: white;
         }
 .bannerV2 {
-            font-size: 5.7rem;
+            font-size: 8rem;
             margin: 0;
             padding: 0rem 0rem;
             background-color: #00A1E2;
