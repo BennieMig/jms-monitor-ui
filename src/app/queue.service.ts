@@ -2,12 +2,12 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
-import { Apod } from './apod';
+import { Queue } from './queue';
 
 @Injectable({ providedIn: 'root' })
-export class ApodService {
+export class QueueService {
 
-private apodUrl = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&count=1';  // URL to web api
+private queueUrl = 'http://35.189.243.155/jms-monitor-app/api/v1/mon/registos/1';  // URL to web api
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -15,31 +15,18 @@ private apodUrl = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&count=1'
 
 constructor(private http: HttpClient) { }  
 
-
-/*
-https://angular.io/guide/http 
-*/
-
-     getApods():Observable<Apod[]> {
-       
-       this.log('fetched apodss');
-    return this.http.get<Apod[]>(this.apodUrl)
-    .pipe( 
-    tap(_ => this.log('fetched apods')),  
-    catchError(this.handleError<Apod[]>('getApods', []))
+/** GET apods from the server */
+     getQueues(): Observable<Queue[]> {
+    return this.http.get<Queue[]>(this.queueUrl)
+      .pipe(
+        tap(_ => this.log('fetched queues')),
+        catchError(this.handleError<Queue[]>('getQueues', []))
       );
   }
- /* getSynApods(): Apod[] {
-       return new Apod();
-    return this.http.get<Apod[]>(this.apodUrl);
-   } */
-      
-
-  
   
    /** Log a HeroService message with the MessageService */
   private log(message: string) {
-    console.info(`ApodService: ${message}`);
+    console.info(`QueueService: ${message}`);
   }
   
   /**

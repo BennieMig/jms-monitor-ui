@@ -202,10 +202,9 @@ body{
   }
 }
 
-/* PL alargar écran para images caberem */
 @media screen and (min-width: 900px){
   .container{
-    width: 75.33333%;
+    width: 33.33333%;
   }
 }
 
@@ -221,7 +220,6 @@ body{
   max-width: 400px;
   margin: auto;
   overflow: hidden;
-   
 }
 
 .content .content-overlay {
@@ -238,7 +236,6 @@ body{
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
   background-color: #00A1E2;
- 
 }
 
 .content:hover .content-overlay{
@@ -247,9 +244,6 @@ body{
 
 .content-image{
   width: 100%;
-  opacity: 100%;
-
- 
 }
 
 .content-details {

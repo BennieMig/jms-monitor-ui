@@ -47,7 +47,8 @@
          .footer {
             font-size: 1.3rem;
             margin: 0;
-            padding: 2rem 1rem;
+            
+             padding: 1rem 1rem;
             background-color: #00A1E2;
             color: white;
             font-family: 'Brush Script MT', cursive;
