@@ -8,6 +8,7 @@ import { BarraCimaComponent } from './barra-cima/barra-cima.component';
 import { BarraBaixoComponent } from './barra-baixo/barra-baixo.component';
 import { CorpoComponent } from './corpo/corpo.component';
 import { UniverseComponent } from './universe/universe.component';
+import { GoatComponent } from './goat/goat.component';
 import { QueuesComponent } from './queues/queues.component';
 //PL import httpclient module. tb alterado NgModule para incluir HttpClientModule
 import { HttpClientModule } from '@angular/common/http';
@@ -22,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
       { path: '', component: CorpoComponent },
       { path: 'universe', component: UniverseComponent },
        { path: 'queues', component: QueuesComponent },
+       { path: 'goat', component: GoatComponent },
     ])
   ],
   declarations: [ 
@@ -30,6 +32,7 @@ import { HttpClientModule } from '@angular/common/http';
     CorpoComponent,
     BarraBaixoComponent,
     UniverseComponent,
+    GoatComponent,
     QueuesComponent,
      ],
   bootstrap:    [ AppComponent ],

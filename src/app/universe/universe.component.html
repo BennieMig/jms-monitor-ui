@@ -4,7 +4,6 @@
       <a *ngFor="let apod of apods">
          <h3>   
          {{apod.title}}
-        {{apod.explanation}}
         </h3>
 </a>
    </div>
@@ -13,18 +12,16 @@
   <div class="content">
      
       <a *ngFor="let apod of apods">
-      <img class="content-image" src="{{apod.url}}" width="350" height="350">
+      <img class="content-image" src="{{apod.url}}" width="400" height="400">
       
     </a>
    </div>   
   <div class="content">
-     <a routerLink="universe">
-      <div class="content-overlay"></div>
-      <img class="content-image" src="/assets/gaze.jpg" width="250" height="250">
-      <div class="content-details fadeIn-top">
-        <h3>Lets See The Universe !!</h3>
-      </div>
-    </a>
+    <a *ngFor="let apod of apods">
+         <h6>   
+         {{apod.explanation}}
+        </h6>
+</a>
   </div>    
     
     
