@@ -21,18 +21,36 @@ https://angular.io/guide/http
 */
 
      getApods():Observable<Apod[]> {
-       
-       this.log('fetched apodss');
+    this.log('fetched apodss');
     return this.http.get<Apod[]>(this.apodUrl)
     .pipe( 
-    tap(_ => this.log('fetched apods')),  
-    catchError(this.handleError<Apod[]>('getApods', []))
-      );
+    tap(x => x.length ? this.log('fetched apods '+ x[0]):this.log('no apods')),
+    catchError(this.handleError<Apod[]>('getApods', [])));
   }
- /* getSynApods(): Apod[] {
-       return new Apod();
-    return this.http.get<Apod[]>(this.apodUrl);
-   } */
+  
+  
+/*
+ 
+  searchHeroes(term: string): Observable<Hero[]> {
+    if (!term.trim()) {
+      // if not search term, return empty hero array.
+      return of([]);
+    }
+    return this.http.get<Hero[]>(`${this.heroesUrl}/?name=${term}`).pipe(
+      tap(x => x.length ?
+         this.log(`found heroes matching "${term}"`) :
+         this.log(`no heroes matching "${term}"`)),
+      catchError(this.handleError<Hero[]>('searchHeroes', []))
+    );
+  }
+  */
+
+
+  
+  /*
+  getSyncApods(): void {
+    this.http.get<Apod[]>(this.apodUrl);
+   }*/
       
 
   
@@ -60,6 +78,7 @@ https://angular.io/guide/http
       // Let the app keep running by returning an empty result.
       return of(result as T);
     };
+    
   }
   
 }

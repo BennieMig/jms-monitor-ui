@@ -16,14 +16,15 @@ export class UniverseComponent implements OnInit {
 
 
   ngOnInit(): void {
-      this.getApods();
-       setTimeout(() => {hideloader()}, 5000);    
-       function hideloader() {
+    this.getApods();
+     //  this.getSyncApods();
+    //   setTimeout(() => {hideloader()}, 5000);    
+     //  function hideloader() {
   
             // Setting display of spinner
             // element to none
          //   document.getElementById('loading').style.display = 'none';
-        } 
+    //    } 
         
   } 
   
@@ -34,12 +35,12 @@ export class UniverseComponent implements OnInit {
   }  */
 
  getApods(): void {
-    this.apodService.getApods().subscribe(apods => this.apods = apods.slice(1,2));
+    this.apodService.getApods().subscribe(apods => this.apods = apods.slice(0,1));
   }
   
-  // getSyncApods(): Apod[] {
-   // this.apodService.getSyncApods());
- // }
+  // getSyncApods(): void  {
+  // this.apodService.getSyncApods();
+// }
 
 
 
