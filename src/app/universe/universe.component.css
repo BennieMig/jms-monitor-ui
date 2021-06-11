@@ -204,6 +204,7 @@ body{
   .container{
     display: block;
     width: 100%;
+     margin-top: 10px;
   }
 }
 
@@ -211,6 +212,7 @@ body{
 @media screen and (min-width: 900px){
   .container{
     width: 100.0000%;
+     margin-top: 10px;
   }
 }
 
@@ -218,11 +220,12 @@ body{
   color: #00A1E2;
   text-align: center;
   margin-bottom: 10px;
+   margin-top: 10px;
 }
 
 .content {
   position: relative;
-  width: 90%;
+  width: 100%;
   max-width: 400px;
   margin: auto;
   overflow: hidden;
