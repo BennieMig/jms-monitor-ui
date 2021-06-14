@@ -10,6 +10,7 @@ import { CorpoComponent } from './corpo/corpo.component';
 import { UniverseComponent } from './universe/universe.component';
 import { GoatComponent } from './goat/goat.component';
 import { QueuesComponent } from './queues/queues.component';
+import { PageNotFoundComponent } from './pagenotfound/pagenotfound.component';
 //PL import httpclient module. tb alterado NgModule para incluir HttpClientModule
 import { HttpClientModule } from '@angular/common/http';
 
@@ -24,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
       { path: 'universe', component: UniverseComponent },
        { path: 'queues', component: QueuesComponent },
        { path: 'goat', component: GoatComponent },
+       { path: '**', component: PageNotFoundComponent },
     ])
   ],
   declarations: [ 
@@ -34,6 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
     UniverseComponent,
     GoatComponent,
     QueuesComponent,
+    PageNotFoundComponent,
      ],
   bootstrap:    [ AppComponent ],
 })

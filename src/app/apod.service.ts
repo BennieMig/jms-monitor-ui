@@ -7,7 +7,8 @@ import { Apod } from './apod';
 @Injectable({ providedIn: 'root' })
 export class ApodService {
 
-private apodUrl = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&count=1';  // URL to web api
+private apodUrl = 'http://35.241.230.139/jms-monitor-app/api/v1/apod/count/1';
+//private apodUrl = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&count=1';  // URL to web api
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
