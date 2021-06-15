@@ -7,7 +7,7 @@ import { Queue } from './queue';
 @Injectable({ providedIn: 'root' })
 export class QueueService {
 
-private queueUrl = 'http://35.189.243.155/jms-monitor-app/api/v1/mon/registos/1';  // URL to web api
+private queueUrl = '/jms-monitor-app/api/v1/mon/registos/1';  // URL to web api
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })

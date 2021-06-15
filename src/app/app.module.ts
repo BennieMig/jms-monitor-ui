@@ -11,6 +11,9 @@ import { UniverseComponent } from './universe/universe.component';
 import { GoatComponent } from './goat/goat.component';
 import { QueuesComponent } from './queues/queues.component';
 import { PageNotFoundComponent } from './pagenotfound/pagenotfound.component';
+import { UploadJMSComponent } from './uploadjms/uploadjms.component';
+import { PesquisaJMSComponent } from './pesquisajms/pesquisajms.component';
+import { InterfaceComponent } from './interface/interface.component';
 //PL import httpclient module. tb alterado NgModule para incluir HttpClientModule
 import { HttpClientModule } from '@angular/common/http';
 
@@ -25,6 +28,9 @@ import { HttpClientModule } from '@angular/common/http';
       { path: 'universe', component: UniverseComponent },
        { path: 'queues', component: QueuesComponent },
        { path: 'goat', component: GoatComponent },
+       { path: 'queues/uploadjms', component: UploadJMSComponent },
+       { path: 'queues/pesquisajms', component: PesquisaJMSComponent },
+       { path: 'interface', component: InterfaceComponent },
        { path: '**', component: PageNotFoundComponent },
     ])
   ],
@@ -36,6 +42,9 @@ import { HttpClientModule } from '@angular/common/http';
     UniverseComponent,
     GoatComponent,
     QueuesComponent,
+    UploadJMSComponent,
+    PesquisaJMSComponent,
+    InterfaceComponent,
     PageNotFoundComponent,
      ],
   bootstrap:    [ AppComponent ],

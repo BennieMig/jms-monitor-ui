@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Apod } from '../apod';
-import { ApodService } from '../apod.service';
+import { Apod } from './../services/apod/apod';
+import { ApodService } from './../services/apod/apod.service';
 
 @Component({
   selector: 'app-universe',
@@ -35,7 +35,7 @@ export class UniverseComponent implements OnInit {
   }  */
 
  getApods(): void {
-    this.apodService.getApods().subscribe(apods => this.apods = apods.slice(0,1));
+    this.apodService.getApods().subscribe(apods => this.apods= apods.slice(0,1) );
   }
   
   // getSyncApods(): void  {
