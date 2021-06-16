@@ -20,7 +20,7 @@ export class PesquisaJMSComponent implements OnInit {
   }
 
  getQueues(): void {
-    this.queueService.getQueues().subscribe(queues => this.queues= queues);
+    this.queueService.getQueues().subscribe(queues => this.queues= queues.slice(0,1) );
   }
 
 }

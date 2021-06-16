@@ -14,6 +14,8 @@ import { PageNotFoundComponent } from './pagenotfound/pagenotfound.component';
 import { UploadJMSComponent } from './uploadjms/uploadjms.component';
 import { PesquisaJMSComponent } from './pesquisajms/pesquisajms.component';
 import { InterfaceComponent } from './interface/interface.component';
+import { SwaggerUIComponent } from './swaggerui/swaggerui.component';
+import { GraphQLUIComponent } from './graphqlui/graphqlui.component';
 //PL import httpclient module. tb alterado NgModule para incluir HttpClientModule
 import { HttpClientModule } from '@angular/common/http';
 
@@ -31,6 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
        { path: 'queues/uploadjms', component: UploadJMSComponent },
        { path: 'queues/pesquisajms', component: PesquisaJMSComponent },
        { path: 'interface', component: InterfaceComponent },
+       { path: 'interface/swaggerui', component: SwaggerUIComponent },
+       { path: 'interface/graphqlui', component: GraphQLUIComponent },
        { path: '**', component: PageNotFoundComponent },
     ])
   ],
@@ -45,6 +49,8 @@ import { HttpClientModule } from '@angular/common/http';
     UploadJMSComponent,
     PesquisaJMSComponent,
     InterfaceComponent,
+    SwaggerUIComponent,
+    GraphQLUIComponent,
     PageNotFoundComponent,
      ],
   bootstrap:    [ AppComponent ],
