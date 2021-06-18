@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
 import { Queue } from './../services/jms/queue';
 import { QueueService } from './../services/jms/queue.service';
+import { FormGroup, FormControl, Validators} from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-pesquisajms',
@@ -20,7 +21,18 @@ export class PesquisaJMSComponent implements OnInit {
   }
 
  getQueues(): void {
-    this.queueService.getQueues().subscribe(queues => this.queues= queues.slice(0,1) );
+    this.queueService.getQueues().subscribe(queues => this.queues= queues );
+  }
+  
+  
+  form = new FormGroup({
+    queue: new FormControl('', Validators.required)
+  });
+  get f(){
+    return this.form.controls;
+  }
+  submit(){
+    console.log(this.form.value);
   }
 
 }

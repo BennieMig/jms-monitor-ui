@@ -23,7 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports:      [ 
   BrowserModule,  
   HttpClientModule, 
-  FormsModule ,
+  FormsModule,
   ReactiveFormsModule,
   RouterModule.forRoot([
       { path: '', component: CorpoComponent },
