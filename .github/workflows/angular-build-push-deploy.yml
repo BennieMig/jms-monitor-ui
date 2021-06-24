@@ -1,4 +1,4 @@
-name: Angular CI Build-Deploy 
+name: Angular CI/CD Build-Deploy 
 on:
   push:
     branches: [ 1.1.0 ]   
