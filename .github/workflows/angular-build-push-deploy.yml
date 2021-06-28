@@ -11,7 +11,7 @@ jobs:
         matrix:
             node-version: [14.7.*]
       steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Cache node modules
         uses: actions/cache@v1
         with:
@@ -29,3 +29,13 @@ jobs:
         run: |
           npm ci
           npm run build:ci
+          
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2.1.0
+        with:
+            key: ${{ secrets.CLOUD_VM_KEY }}
+            known_hosts: ${{ secrets.CLOUD_VM_KNOWN_HOSTS }} 
+
+      - name: Execute Script
+        run: ssh ${{ secrets.CLOUD_VM_USER }}@${{ secrets.CLOUD_VM_IP }} bash you_in.sh
+        if: ${{ false }}
