@@ -15,6 +15,8 @@ import { UploadJMSComponent } from './uploadjms/uploadjms.component';
 import { PesquisaJMSComponent } from './pesquisajms/pesquisajms.component';
 import { InterfaceComponent } from './interface/interface.component';
 import { SwaggerUIComponent } from './swaggerui/swaggerui.component';
+import { SwaggerUIJavaComponent } from './swaggeruijava/swaggeruijava.component';
+import { SwaggerUIDotNetCoreComponent } from './swaggeruidotnetcore/swaggeruidotnetcore.component';
 import { GraphQLUIComponent } from './graphqlui/graphqlui.component';
 //PL import httpclient module. tb alterado NgModule para incluir HttpClientModule
 import { HttpClientModule } from '@angular/common/http';
@@ -34,6 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
        { path: 'queues/pesquisajms', component: PesquisaJMSComponent },
        { path: 'interface', component: InterfaceComponent },
        { path: 'interface/swaggerui', component: SwaggerUIComponent },
+       { path: 'interface/swaggerui/swaggeruijava', component: SwaggerUIJavaComponent },  
+      { path: 'interface/swaggerui/swaggeruidotnetcore', component: SwaggerUIDotNetCoreComponent },
        { path: 'interface/graphqlui', component: GraphQLUIComponent },
        { path: '**', component: PageNotFoundComponent },
     ])
@@ -50,6 +54,8 @@ import { HttpClientModule } from '@angular/common/http';
     PesquisaJMSComponent,
     InterfaceComponent,
     SwaggerUIComponent,
+    SwaggerUIJavaComponent,
+    SwaggerUIDotNetCoreComponent,
     GraphQLUIComponent,
     PageNotFoundComponent,
      ],

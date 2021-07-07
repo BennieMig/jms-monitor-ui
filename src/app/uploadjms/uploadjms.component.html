@@ -1,49 +1,14 @@
 <div class="corpo" align="center">
-<div class="container" >
     <div class="container" >
       <div class="content">
- 
       <div class="content-overlay"></div>
       <img class="content-image" src="assets/underconstruction.png" width="250" height="250" alt="">
       <div class="content-details fadeIn-top">
         <h3>Under Construction !!</h3>
       </div>
-
-   </div>
-    
-    
-   <div class="content"> 
-    <form [formGroup]="form" (ngSubmit)="submit()">
-            
-        <div class="form-group">
-            <label for="website">Website:</label>
-            <select formControlName="website" class="form-control">
-                <option disabled>Select Website</option>
-                <option>Choose Website</option>
-                <option *ngFor="let web of websiteList">{{web}}</option>
-            </select>
-            <div *ngIf="f.website.touched && f.website.invalid" class="alert alert-danger">
-                <div *ngIf="f.website.errors.required">Name is required.</div>
-            </div>
-        </div>
-        
-        <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Submit</button>
-    </form>
-    </div>
-       
-  <div class="content">
-    
-         <h3>   
-      
-             <h6>TESTEE</h6>
-        </h3>
-
-
-   </div>
-  
+   </div>  
   </div>
-    </div>
-
+ </div>
 
 
 

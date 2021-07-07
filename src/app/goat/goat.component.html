@@ -1,9 +1,16 @@
 <div class="corpo" align="center">
 <div class="container" >
-
- <div class="content" >
-     <h3>I am black or white, I'll never be grey in my life. <br>Diego Maradona</h3> 
-  </div>     
+    
+      <div class="content">
+      <a *ngFor="let quote of quotes">
+         <h3>   
+             {{quote.quote}} 
+             <br>
+             <h6> {{quote.fromWho}}</h6>
+        </h3>
+</a>
+   </div>
+    
   <div class="content" >
     <img class="content-image" src="assets/maradona.jpg" width="350" height="350" alt="">
    </div>   

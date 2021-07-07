@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
+import { Quote } from './../services/quote/quote';
+import { QuoteService } from './../services/quote/quote.service';
 
 @Component({
   selector: 'app-goat',
@@ -9,16 +10,16 @@ import { HttpClient } from '@angular/common/http';
 })
 export class GoatComponent implements OnInit {
     
-   
-
-  constructor() { }
-
-
-  ngOnInit(){}
+    quotes: Quote[] = [];
+    
+   constructor(private quoteService: QuoteService ) { }
+  ngOnInit(){
+       this.getQuotes();
+      }
   
+ getQuotes(): void {
+    this.quoteService.getQuotes().subscribe(quotes => this.quotes= quotes.slice(0,1) );
+  }
   
-  
-  
-
 
 }
