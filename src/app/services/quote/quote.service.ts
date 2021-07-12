@@ -7,7 +7,7 @@ import { Quote } from './quote';
 @Injectable({ providedIn: 'root' })
 export class QuoteService {
 
-private quoteUrl = '/jms-quotes-app/api/v1/Quotes/GetQuotes';  // URL to web api
+private quoteUrl = '/jms-quotes-app/api/v1/Quotes/GetQuotesRandom';  // URL to web api
 //private queueUrl ='http://35.195.69.137/jms-quotes-app/api/QuotesItems'
 
   httpOptions = {
