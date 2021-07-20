@@ -1,4 +1,4 @@
-     h1, h2, h3, h4, h5, h6 {
+       h1, h2, h3, h4, h5, h6 {
             margin-bottom: 0.5rem;
             font-weight: 400;
             line-height: 1.5;
@@ -202,11 +202,10 @@ body{
   }
 }
 
-/* PL alargar écran para images caberem */
+/* PL */
 @media screen and (min-width: 900px){
   .container{
-    width: 80%;
-    
+    width: 47%;
   }
 }
 
@@ -222,7 +221,6 @@ body{
   max-width: 400px;
   margin: auto;
   overflow: hidden;
-   
 }
 
 .content .content-overlay {
@@ -239,7 +237,6 @@ body{
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
   background-color: #00A1E2;
- 
 }
 
 .content:hover .content-overlay{
@@ -248,9 +245,6 @@ body{
 
 .content-image{
   width: 100%;
-  opacity: 100%;
-
- 
 }
 
 .content-details {

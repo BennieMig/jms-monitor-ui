@@ -14,7 +14,13 @@ import { PageNotFoundComponent } from './pagenotfound/pagenotfound.component';
 import { UploadJMSComponent } from './uploadjms/uploadjms.component';
 import { PesquisaJMSComponent } from './pesquisajms/pesquisajms.component';
 import { InterfaceComponent } from './interface/interface.component';
+import { PulseComponent } from './pulse/pulse.component';
+import { GrafanaComponent } from './grafana/grafana.component';
+import { PrometheusComponent } from './prometheus/prometheus.component';
 import { SwaggerUIComponent } from './swaggerui/swaggerui.component';
+import { AlertsComponent } from './alerts/alerts.component';
+import { AlertWebComponent } from './alertweb/alertweb.component';
+import { AlertEmailComponent } from './alertemail/alertemail.component';
 import { SwaggerUIJavaComponent } from './swaggeruijava/swaggeruijava.component';
 import { SwaggerUIDotNetCoreComponent } from './swaggeruidotnetcore/swaggeruidotnetcore.component';
 import { GraphQLUIComponent } from './graphqlui/graphqlui.component';
@@ -35,7 +41,13 @@ import { HttpClientModule } from '@angular/common/http';
        { path: 'queues/uploadjms', component: UploadJMSComponent },
        { path: 'queues/pesquisajms', component: PesquisaJMSComponent },
        { path: 'interface', component: InterfaceComponent },
+        { path: 'pulse', component: PulseComponent },
+        { path: 'pulse/grafana', component: GrafanaComponent },
+         { path: 'pulse/prometheus', component: PrometheusComponent },
        { path: 'interface/swaggerui', component: SwaggerUIComponent },
+       { path: 'pulse/alerts', component: AlertsComponent },
+       { path: 'pulse/alerts/alertweb', component: AlertWebComponent },
+       { path: 'pulse/alerts/alertemail', component: AlertEmailComponent },
        { path: 'interface/swaggerui/swaggeruijava', component: SwaggerUIJavaComponent },  
       { path: 'interface/swaggerui/swaggeruidotnetcore', component: SwaggerUIDotNetCoreComponent },
        { path: 'interface/graphqlui', component: GraphQLUIComponent },
@@ -53,7 +65,13 @@ import { HttpClientModule } from '@angular/common/http';
     UploadJMSComponent,
     PesquisaJMSComponent,
     InterfaceComponent,
+    PulseComponent,
+    GrafanaComponent,
+    PrometheusComponent,
     SwaggerUIComponent,
+    AlertsComponent,
+    AlertWebComponent,
+    AlertEmailComponent,
     SwaggerUIJavaComponent,
     SwaggerUIDotNetCoreComponent,
     GraphQLUIComponent,
