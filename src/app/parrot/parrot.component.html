@@ -1,12 +1,9 @@
 <div class="corpo" align="center">
     <div class="container" >
- 
-    
-        
-      <div class="content">      
-<input [(ngModel)]="newMessage" cols="50" (keyup)="$event.keyCode == 13 && sendMessage()" /><a>&nbsp;&nbsp;</a>
-<button (click)="sendMessage()">Talk to the Parrot !!</button>
 
+      <div class="content">      
+<input [(ngModel)]="newMessage" cols="50" (keyup)="$event.keyCode == 13 && sendMessage()" style="width: 225px;padding: 0px 2px;" />
+<button (click)="sendMessage()"  class="butao"  >Talk to me !</button>
 <textarea id="" cols="55" rows="15" [(ngModel)]="content" style="resize: none; border-color: Transparent;"></textarea>        
 
   </div>

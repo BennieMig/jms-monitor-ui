@@ -37,7 +37,8 @@ implements OnInit {
       this.parrotService.messages.subscribe((message: string) => {
       //  this.messageList.push(message);
          console.log("Em ParrotComponent msg="+message);
-         this.content += "WS Parrot: " + message;
+          var date=new Date();
+         this.content = date.getHours()+":"+date.getMinutes()+ ":"+date.getSeconds()+ " Parrot: " + message + '\n'+ this.content;
       });
        
   }
@@ -45,10 +46,13 @@ implements OnInit {
  //https://github.com/elliotforbes/angular-websockets/blob/master/src/app/app.component.ts
  sendMessage() {
   this.parrotService.messages.next(this.newMessage);
-   this.content += "You: "+ this.newMessage;
+  var date=new Date();
+   this.content = date.getHours()+":"+date.getMinutes()+ ":"+date.getSeconds()+ " You: "+this.newMessage +'\n' + this.content;
   this.newMessage = '';
   } 
   
+  
+
 
   submit(){
   

@@ -138,6 +138,16 @@ body {
   height: auto;
 }
 
+/* PL Incluido */
+.butao {
+    font-size: 14px;
+    border: none;
+    color: white; 
+    background-color: #00A1E2;
+    padding: 2px 2px;
+  text-align: center;
+}
+
 /* The overlay effect (full height and width) - lays on top of the container and over the image */
 .overlay {
   position: absolute;
