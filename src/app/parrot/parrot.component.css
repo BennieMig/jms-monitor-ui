@@ -1,4 +1,4 @@
-     h1, h2, h3, h4, h5, h6 {
+ h1, h2, h3, h4, h5, h6 {
             margin-bottom: 0.5rem;
             font-weight: 400;
             line-height: 1.5;
@@ -25,7 +25,8 @@
         }
 
         h6 {
-            font-size: 1rem
+            font-size: 1rem;
+            color: black;
         }
 
         .lead {
@@ -189,11 +190,12 @@ body{
   padding: 0.7em 0;
 }
 
+
 .container{
   padding: 0;
   padding: 0;
   float: center;
-  width: 50%;
+  width: 100%;
 }
 @media screen and (max-width: 640px){
   .container{
@@ -202,10 +204,11 @@ body{
   }
 }
 
-/* Ajustar os paineis*/
+/* PL INCLUIR PADDING EM CIMA DA CAIXA */
 @media screen and (min-width: 900px){
   .container{
-    width: 47%;
+    width: 100%;
+   /*  margin-top: 5px; */
   }
 }
 
@@ -218,7 +221,7 @@ body{
 .content {
   position: relative;
   width: 90%;
-  max-width: 400px;
+  max-width: 450px;
   margin: auto;
   overflow: hidden;
 }
@@ -305,3 +308,4 @@ body{
 .fadeIn-right{
   left: 80%;
 }
+

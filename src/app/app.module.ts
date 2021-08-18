@@ -11,6 +11,7 @@ import { UniverseComponent } from './universe/universe.component';
 import { GoatComponent } from './goat/goat.component';
 import { QueuesComponent } from './queues/queues.component';
 import { PageNotFoundComponent } from './pagenotfound/pagenotfound.component';
+import { ParrotComponent } from './parrot/parrot.component';
 import { UploadJMSComponent } from './uploadjms/uploadjms.component';
 import { PesquisaJMSComponent } from './pesquisajms/pesquisajms.component';
 import { InterfaceComponent } from './interface/interface.component';
@@ -40,16 +41,17 @@ import { HttpClientModule } from '@angular/common/http';
        { path: 'goat', component: GoatComponent },
        { path: 'queues/uploadjms', component: UploadJMSComponent },
        { path: 'queues/pesquisajms', component: PesquisaJMSComponent },
+       { path: 'queues/parrot', component: ParrotComponent },
        { path: 'interface', component: InterfaceComponent },
-        { path: 'pulse', component: PulseComponent },
-        { path: 'pulse/grafana', component: GrafanaComponent },
-         { path: 'pulse/prometheus', component: PrometheusComponent },
+       { path: 'pulse', component: PulseComponent },
+       { path: 'pulse/grafana', component: GrafanaComponent },
+       { path: 'pulse/prometheus', component: PrometheusComponent },
        { path: 'interface/swaggerui', component: SwaggerUIComponent },
        { path: 'pulse/alerts', component: AlertsComponent },
        { path: 'pulse/alerts/alertweb', component: AlertWebComponent },
        { path: 'pulse/alerts/alertemail', component: AlertEmailComponent },
        { path: 'interface/swaggerui/swaggeruijava', component: SwaggerUIJavaComponent },  
-      { path: 'interface/swaggerui/swaggeruidotnetcore', component: SwaggerUIDotNetCoreComponent },
+       { path: 'interface/swaggerui/swaggeruidotnetcore', component: SwaggerUIDotNetCoreComponent },
        { path: 'interface/graphqlui', component: GraphQLUIComponent },
        { path: '**', component: PageNotFoundComponent },
     ])
@@ -62,6 +64,7 @@ import { HttpClientModule } from '@angular/common/http';
     UniverseComponent,
     GoatComponent,
     QueuesComponent,
+    ParrotComponent,
     UploadJMSComponent,
     PesquisaJMSComponent,
     InterfaceComponent,
@@ -77,6 +80,7 @@ import { HttpClientModule } from '@angular/common/http';
     GraphQLUIComponent,
     PageNotFoundComponent,
      ],
+  
   bootstrap:    [ AppComponent ],
 })
 export class AppModule { }
