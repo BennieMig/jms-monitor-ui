@@ -13,20 +13,21 @@
     "@angular/platform-browser": "^11.2.10",
     "@angular/platform-browser-dynamic": "^11.2.10",
     "@angular/router": "^11.2.10",
+    "angular2-uuid": "^1.1.1",
     "rxjs": "^6.6.3",
     "tslib": "^2.1.0",
     "zone.js": "^0.11.3"
   },
   "scripts": {
     "ng": "ng",
-    "clean": "rimraf ./dist",    
+    "clean": "rimraf ./dist",
     "start": "ng serve",
     "build": "ng build",
     "build:prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:ci": "npm run clean && npm run build:prod"    
+    "build:ci": "npm run clean && npm run build:prod"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1102.10",

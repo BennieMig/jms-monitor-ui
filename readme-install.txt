@@ -18,3 +18,61 @@ C:\node-v14.17.0-win-x64\ng -> C:\node-v14.17.0-win-x64\node_modules\@angular\cl
 added 255 packages from 201 contributors in 71s
 
 C:\node-v14.17.0-win-x64>npm install -g @angular/cli@11.0.4
+
+
+
+############### INCLUIR NPM angular2-uuid
+C:\PROJECTOS_ENTREGAS\QUARKUS_SAMPLE\stackblitz\jms-monitor-ui>set PATH=%PATH%;C:\node-v14.17.0-win-x64
+
+C:\PROJECTOS_ENTREGAS\QUARKUS_SAMPLE\stackblitz\jms-monitor-ui>npm install angular2-uuid --save
+
+npm WARN @angular/material@11.2.13 requires a peer of @angular/cdk@11.2.13 but none is installed. You must install peer dependencies yourself.
+npm WARN cssnano-preset-default@5.1.2 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN cssnano-utils@2.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN karma-jasmine-html-reporter@1.6.0 requires a peer of jasmine-core@>=3.7.1 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-colormin@5.2.0 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-convert-values@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-discard-comments@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-discard-duplicates@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-discard-empty@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-discard-overridden@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-merge-longhand@5.0.2 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-merge-rules@5.0.2 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-minify-font-values@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-minify-gradients@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-minify-params@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-minify-selectors@5.1.0 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-normalize-charset@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-normalize-display-values@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-normalize-positions@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-normalize-repeat-style@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-normalize-string@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-normalize-timing-functions@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-normalize-unicode@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-normalize-url@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-normalize-whitespace@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-ordered-values@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-reduce-initial@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-reduce-transforms@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-svgo@5.0.2 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN postcss-unique-selectors@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN stylehacks@5.0.1 requires a peer of postcss@^8.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.2 (node_modules\chokidar\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.2 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\watchpack-chokidar2\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\webpack-dev-server\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ angular2-uuid@1.1.1
+added 1 package from 1 contributor, removed 1 package and audited 1481 packages in 63.435s
+
+85 packages are looking for funding
+  run `npm fund` for details
+
+found 32 vulnerabilities (8 moderate, 24 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+C:\PROJECTOS_ENTREGAS\QUARKUS_SAMPLE\stackblitz\jms-monitor-ui>

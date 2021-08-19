@@ -1,7 +1,6 @@
 <div class="corpo" align="center">
     <div class="container" >
-
-      <div class="content">      
+<div class="content">
 <input [(ngModel)]="newMessage" cols="50" (keyup)="$event.keyCode == 13 && sendMessage()" style="width: 235px;padding: 0px 2px;" />
 <button (click)="sendMessage()"  class="butao"  >Talk to me !</button>
 <textarea id="" cols="40" rows="20" [(ngModel)]="content" style="resize: none; border-color: Transparent;"></textarea>        
