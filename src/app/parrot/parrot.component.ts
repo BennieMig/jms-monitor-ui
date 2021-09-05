@@ -15,7 +15,7 @@ implements OnInit {
   messageList:  string[] = [];
   content = ''; 
    
-  //https://stackoverflow.com/questions/47451177/getting-live-data-from-server-continuosly-and-refelect-changes-in-html-in-angula 
+  //https://stackoverflow.com/questions/47451177/getting-live-data-from-server-continuosly-and-refelect-changes-in-html-in-angular 
   //https://www.techiediaries.com/angular-9-realtime-chat-example-with-nodejs-socketio-and-websocket/
   
   //constructor() { }
