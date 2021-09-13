@@ -16,6 +16,8 @@ import { UploadJMSComponent } from './uploadjms/uploadjms.component';
 import { PesquisaJMSComponent } from './pesquisajms/pesquisajms.component';
 import { InterfaceComponent } from './interface/interface.component';
 import { PulseComponent } from './pulse/pulse.component';
+import { MongoComponent } from './mongo/mongo.component';
+import { ToolsComponent } from './tools/tools.component';
 import { GrafanaComponent } from './grafana/grafana.component';
 import { PrometheusComponent } from './prometheus/prometheus.component';
 import { SwaggerUIComponent } from './swaggerui/swaggerui.component';
@@ -38,6 +40,8 @@ import { HttpClientModule } from '@angular/common/http';
       { path: '', component: CorpoComponent },
       { path: 'universe', component: UniverseComponent },
        { path: 'queues', component: QueuesComponent },
+        { path: 'tools', component: ToolsComponent },
+        { path: 'tools/mongo', component: MongoComponent },
        { path: 'goat', component: GoatComponent },
        { path: 'queues/uploadjms', component: UploadJMSComponent },
        { path: 'queues/pesquisajms', component: PesquisaJMSComponent },
@@ -64,6 +68,8 @@ import { HttpClientModule } from '@angular/common/http';
     UniverseComponent,
     GoatComponent,
     QueuesComponent,
+    MongoComponent,
+    ToolsComponent,
     ParrotComponent,
     UploadJMSComponent,
     PesquisaJMSComponent,
