@@ -25,6 +25,7 @@ import { AlertsComponent } from './alerts/alerts.component';
 import { AlertWebComponent } from './alertweb/alertweb.component';
 import { AlertEmailComponent } from './alertemail/alertemail.component';
 import { SwaggerUIJavaComponent } from './swaggeruijava/swaggeruijava.component';
+import { SwaggerUIJava2Component } from './swaggeruijava2/swaggeruijava2.component';
 import { SwaggerUIDotNetCoreComponent } from './swaggeruidotnetcore/swaggeruidotnetcore.component';
 import { GraphQLUIComponent } from './graphqlui/graphqlui.component';
 //PL import httpclient module. tb alterado NgModule para incluir HttpClientModule
@@ -54,7 +55,8 @@ import { HttpClientModule } from '@angular/common/http';
        { path: 'pulse/alerts', component: AlertsComponent },
        { path: 'pulse/alerts/alertweb', component: AlertWebComponent },
        { path: 'pulse/alerts/alertemail', component: AlertEmailComponent },
-       { path: 'interface/swaggerui/swaggeruijava', component: SwaggerUIJavaComponent },  
+       { path: 'interface/swaggerui/swaggeruijava', component: SwaggerUIJavaComponent }, 
+       { path: 'interface/swaggerui/swaggeruijava2', component: SwaggerUIJava2Component },  
        { path: 'interface/swaggerui/swaggeruidotnetcore', component: SwaggerUIDotNetCoreComponent },
        { path: 'interface/graphqlui', component: GraphQLUIComponent },
        { path: '**', component: PageNotFoundComponent },
@@ -82,6 +84,7 @@ import { HttpClientModule } from '@angular/common/http';
     AlertWebComponent,
     AlertEmailComponent,
     SwaggerUIJavaComponent,
+    SwaggerUIJava2Component,
     SwaggerUIDotNetCoreComponent,
     GraphQLUIComponent,
     PageNotFoundComponent,

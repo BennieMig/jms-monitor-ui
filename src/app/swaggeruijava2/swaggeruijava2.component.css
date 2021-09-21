@@ -1,4 +1,4 @@
-        h1, h2, h3, h4, h5, h6 {
+     h1, h2, h3, h4, h5, h6 {
             margin-bottom: 0.5rem;
             font-weight: 400;
             line-height: 1.5;
@@ -6,6 +6,7 @@
 
         h1 {
             font-size: 2.5rem;
+            color: black;
         }
 
         h2 {
@@ -13,7 +14,8 @@
         }
 
         h3 {
-            font-size: 1.75rem
+            font-size: 1.75rem;
+                color: black;
         }
 
         h4 {
@@ -189,23 +191,27 @@ body{
   padding: 0.7em 0;
 }
 
-.container{
+.container{    
   padding: 0;
   padding: 0;
   float: center;
   width: 50%;
 }
+
+
 @media screen and (max-width: 640px){
   .container{
     display: block;
     width: 100%;
+     margin-top: 10px;
   }
 }
 
-/* Ajustar os paineis*/
+/* PL alargar écran */
 @media screen and (min-width: 900px){
   .container{
-    width: 47%;
+     width: 100.33333%;
+      margin-top: 10px;
   }
 }
 
@@ -213,12 +219,14 @@ body{
   color: #00A1E2;
   text-align: center;
   margin-bottom: 10px;
+   margin-top: 10px;
+ 
 }
 
 .content {
   position: relative;
-  width: 90%;
-  max-width: 400px;
+  width: 100%;
+ 
   margin: auto;
   overflow: hidden;
 }
@@ -305,3 +313,4 @@ body{
 .fadeIn-right{
   left: 80%;
 }
+
