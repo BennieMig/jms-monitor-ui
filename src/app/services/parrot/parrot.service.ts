@@ -11,7 +11,7 @@ import { UUID } from 'angular2-uuid';
 @Injectable({ providedIn: 'root' })
 export class ParrotService {
 
-    private websocketUrl= "ws://benniemig.mywire.org/jms-monitor-app/wsock/v1/info/"+UUID.UUID(); 
+    private websocketUrl= "wss://benniemig.mywire.org/jms-monitor-app/wsock/v1/info/"+UUID.UUID(); 
     public messages: Subject<String>;
 
    constructor( private websocketService: WebSocketService ) {
