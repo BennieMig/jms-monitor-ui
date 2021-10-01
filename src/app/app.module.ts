@@ -18,6 +18,7 @@ import { InterfaceComponent } from './interface/interface.component';
 import { PulseComponent } from './pulse/pulse.component';
 import { MongoComponent } from './mongo/mongo.component';
 import { TraefikComponent } from './traefik/traefik.component';
+import { KubeComponent } from './kube/kube.component';
 import { ToolsComponent } from './tools/tools.component';
 import { GrafanaComponent } from './grafana/grafana.component';
 import { PrometheusComponent } from './prometheus/prometheus.component';
@@ -45,6 +46,7 @@ import { HttpClientModule } from '@angular/common/http';
         { path: 'tools', component: ToolsComponent },
         { path: 'tools/mongo', component: MongoComponent },
         { path: 'tools/traefik', component: TraefikComponent },
+        { path: 'tools/kube', component: KubeComponent },
        { path: 'goat', component: GoatComponent },
        { path: 'queues/uploadjms', component: UploadJMSComponent },
        { path: 'queues/pesquisajms', component: PesquisaJMSComponent },
@@ -74,6 +76,7 @@ import { HttpClientModule } from '@angular/common/http';
     QueuesComponent,
     MongoComponent,
     TraefikComponent,
+    KubeComponent,
     ToolsComponent,
     ParrotComponent,
     UploadJMSComponent,
